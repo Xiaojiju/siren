@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    druid:
+      username: root
+      password: duanfa*bitch);!-goi.-
+      url: jdbc:mysql://47.96.225.68:3306/nice_xiaojiju?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  type-enums-package: com.summer.siren.enums
+  check-config-location: true
+  configuration:
+    map-underscore-to-camel-case: true

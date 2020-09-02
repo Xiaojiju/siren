@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.summer.siren.mapper.auth.PositionMapper">
+    <!-- 查询所有职位 -->
+    <select id="findPositionList" resultType="com.summer.siren.mapper.dto.PositionDto">
+        select
+            tp.position_id,
+            tp.position_name,
+            tp.parent_position_id,
+            tp.description,
+            tp.department_id,
+            td.department_name,
+            tp.subject_total
+        from
+            t_position tp, t_department td
+        where
+            tp.current_status = 1
+            and
+            tp.department_id = td.department_id
+    </select>
+</mapper>
