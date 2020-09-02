@@ -57,7 +57,7 @@ public class PositionController extends BaseController {
      * 1. 职位下还有人，不能进行删除
      * 2. 仅限最高权限才能进行删除，或发送流程给最高权限的人
      * 3. 假删除
-     * 4. 
+     * 4.
      */
     @DeleteMapping("{version}/positions")
     @VersionMaker
